@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop {
+  animation: pop 0.4s ease-out;
+}
+
+
+@keyframes flyCart {
+  0% { transform: scale(1); opacity: 1; }
+  60% { transform: scale(0.6) translate(200px, -200px); }
+  100% { transform: scale(0.2) translate(400px, -400px); opacity: 0; }
+}
+
+.animate-fly {
+  animation: flyCart 0.7s ease-in-out forwards;
+}

@@ -1,0 +1,31 @@
+# node modules
+node_modules/
+*/node_modules/
+
+# environment files
+.env
+*.env
+
+# build folders
+dist/
+build/
+*/dist/
+*/build/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# uploaded local images
+uploads/
+*/uploads/
+
+# editor
+.vscode/
+.idea/
